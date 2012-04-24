@@ -1,0 +1,5 @@
+# List the python modules required for your project #
+django==1.2.5
+pysqlite
+oauth
+oauth2

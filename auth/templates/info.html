@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block container %}
+<h1>Info</h1>
+<form action="/info/" method="post">
+{%csrf_token%}
+<h3>{% block title %}Necesitamos un correo para {{user.username}}:{% endblock %}</h3>
+{% for error in errors %}
+	{% ifequal 'email' error %}
+		<p class="error">Esto no parece ser un correo.</p>
+	{% endifequal %}
+{% endfor %}
+<input id="email" name="email" type="text" value="{{ user.email }}" class="text" placeholder="Correo electrónico" /></p>
+<p><input type="submit" value="Listo" class="button" /></p>
+<div class="clear"></div>
+{% endblock %}
