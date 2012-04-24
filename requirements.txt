@@ -3,3 +3,5 @@ django==1.2.5
 pysqlite
 oauth
 oauth2
+simplejson
+
