@@ -1,0 +1,26 @@
+{%extends 'layout.html'%}
+{%block container%}
+  <!-- Main hero unit for a primary marketing message or call to action -->
+  <div class="hero-unit" style="text-align:center;">
+    <h1>Django template</h1>
+    <br>
+    <p>Welcome to your template for a django project</p>
+    <br>
+    <br>
+    <p>
+      <a href="/login/twitter/" class="btn btn-primary btn-large">Twitter Login</a>
+      <a href="{{login_facebook_url}}" class="btn btn-primary btn-large">Facebook Login</a>
+    </p>
+    <p>Edit this page:</p>
+    <ul>
+      <li>template -> django-boilerplate/auth/template/index.html</li>
+      <li>view -> django-boilerplate/auth/views.py</li>
+    </ul><!-- / -->
+  </div>
+
+  <hr>
+
+  <footer>
+    <p>&copy; {{COMPANY}} {{YEAR}}</p>
+  </footer>
+{%endblock%}
