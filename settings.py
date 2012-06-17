@@ -80,6 +80,7 @@ ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
     path('auth','templates'),
+    path('main','templates'),
 )
 
 INSTALLED_APPS = (
